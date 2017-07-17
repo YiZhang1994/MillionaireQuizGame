@@ -1,0 +1,177 @@
+body {
+    background-image: url("../images/millionaireBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+p {
+    color: white;
+}
+
+#logoContainer {
+    text-align: center;
+    padding-top: 2rem;
+
+}
+
+button {
+    width: 14rem;
+    font-size: 14px;
+    background-color: transparent;
+    border-color: gray;
+    color: white;
+
+
+}
+
+button:hover {
+    color: yellow;
+    border-color: lavenderblush;
+    box-shadow: 2px 2px 5px yellow;
+}
+
+#logoContainer img {
+    display: inline-block;
+    width: 16em;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 8px #FF0000;
+}
+
+
+
+#quizContainer {
+    color: white;
+    text-align: center;
+    width: 80%;
+    height: auto;
+    border-style: solid;
+    border-radius: 3%;
+    border-width: medium;
+    border-color: #bbbbbb;
+    padding: 2rem 3rem;
+    background-color: transparent;
+    display: none;
+    box-shadow: 2px 2px 5px #bbbbbb;
+    overflow-y: scroll;
+
+}
+
+
+
+.question {
+    font-size: larger;
+    font-weight: bolder;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.options {
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-left: 3rem;
+    text-align: left;
+}
+
+
+
+
+#infoContainer {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: right;
+    display: none;
+    font-size: 16px;
+}
+
+
+
+#yesBtn {
+    margin-right: 1rem;
+}
+
+#level {
+    margin-left: 0.5rem;
+    float: left;
+}
+
+#timer {
+    float: right;
+    margin-right: 0.5rem;
+}
+
+#settingContainer {
+    margin-top: 3rem;
+}
+
+#lifeline {
+    display: none;
+}
+
+.lifelineIcon, #sound {
+    float: right;
+    margin-left: 2rem;
+
+}
+
+div.lifelineIcon, div.lifelineIcon > img{
+    width: 6rem;
+    height: 3rem;
+    position: relative;
+}
+
+div.lifelineIcon > img:hover {
+    box-shadow:4px 4px 2px yellow;
+    border-radius: 3rem / 1.5rem;
+}
+
+
+.glow {
+    margin-bottom: 1em;
+    width: 100%;
+    display: block;
+    font-family: 'Wire One', sans-serif;
+    font-size: 5rem;
+
+}
+
+.glow p {
+    display: inline-block;
+    color: #FFF;
+    text-shadow: 0 0 20px;
+    margin: 0;
+}
+
+.glow p:nth-child(odd) {
+    -webkit-animation: bglow .3s ease infinite;
+}
+.glow p:nth-child(even) {
+    -webkit-animation: rglow .3s ease infinite;
+}
+
+@-webkit-keyframes bglow {
+    0% {
+        color: rgb(176, 244, 230);
+        text-shadow: 0 0 15px;
+    }
+}
+@-webkit-keyframes rglow {
+    100% {
+        color: rgb(233, 54, 40);
+        text-shadow: 0 0 15px;
+    }
+}
+
+
+#goldContainer div {
+    padding:10px;
+    position:absolute;
+    z-index: 3;
+    display: none;
+}

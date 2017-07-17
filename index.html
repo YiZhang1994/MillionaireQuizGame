@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Who wants to be a millionaire</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+
+    <!-- Script
+    __________________________________________________-->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <script src="project1.js"></script>
+    <script src="goldRain.js"></script>
+</head>
+
+
+<body>
+
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+<!--gold initiate container for the winner-->
+<div id="goldContainer">
+    <div><img src="images/coin.png"  width="50px"  height="50px"></div>
+</div>
+
+
+<div class="container">
+
+    <!--the page for start-->
+    <div id="logoContainer">
+        <img src="images/logo.png" alt="logo">
+        <section class="glow">
+            <p>WHO WANTS TO BE A</p>
+            <p>MILLIONAIRE</p>
+        </section>
+            <div><button id="playBtn">Start</button></div>
+            <div><button id="helpBtn">help</button></div>
+    </div>
+
+    <!--lifeline buttons and sound button for user to click-->
+    <div class="container" id="settingContainer">
+        <div id="sound"><img src="images/sound-on.png" alt="sound"></div>
+        <div id="lifeline">
+            <div class="lifelineIcon" id="lifeline5050"><img src="images/lifeline_5050.png" alt="50-50"></div>
+            <div class="lifelineIcon" id="lifelineSwitch"><img src="images/lifeline_switch.png" alt="switch"></div>
+         </div>
+    </div>
+
+    <!--show time and level info-->
+    <div class="container" id="infoContainer">
+        <div id="level"></div>
+        <div id="timer"></div>
+    </div>
+
+    <!--the main container for the quiz-->
+    <div id="quizContainer" class="container">
+    </div>
+
+
+    <!--some audio files-->
+    <audio id="gamemusic" loop>
+        <source src="sound/gamemusic.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="btnClickSound">
+        <source src="sound/menu-click-dry.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="lifelineSound">
+        <source src="sound/menu-selection-click.wav" type="audio/wav">
+    </audio>
+
+    <audio id="applaudSound">
+        <source src="sound/small-crowd-yelling-yeah.wav" type="audio/wav">
+
+    </audio>
+
+    <audio id="failSound">
+        <source src="sound/wrong-answer.wav" type="audio/wav">
+
+    </audio>
+
+    <audio id="winSound"> <source src="sound/success.wav" type="audio/wav"> </audio>
+
+    <audio id="timeoutSound">
+        <source src="sound/timeout.wav" type="audio/wav">
+    </audio>
+
+    <audio id="negativeSound">
+        <source src="sound/negative-beeps.wav" type="audio/wav">
+    </audio>
+
+</div>
+
+
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
